@@ -1,0 +1,456 @@
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Welcome to GiftHands</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'css/main.css' %}" rel="stylesheet">
+
+  
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="{% url 'index' %}" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename"><img src="{% static 'img/gh.png' %}" alt=""> </h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+         <a href="https://x.com/Damiiiy1">
+            <i class="bi bi-twitter-x"></i>
+          </a>
+          <a href="https://facebook.com/profile.php?id=61552098399353">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ndifreke-umoh-75534b2a8/">
+            <i class="bi bi-linkedin"></i>
+          </a>
+      
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="{% static 'img/hero-bg.jpg' %}" alt="" data-aos="fade-in">
+
+      <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2>Welcome to Gifted Hands</h2>
+            <p>
+              At <b>Gifted Hands</b>, we craft custom web applications that help businesses grow, innovate, and succeed. Our tailored solutions streamline operations, engage customers, and unlock new opportunities. With cutting-edge technology and a user-first approach, we’re here to achieve your goals together!
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- What We Do Section -->
+    <section id="what-we-do" class="what-we-do section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>What We Do</h2>
+        <p>We specialize in building dynamic web applications. Our mission is to promote digital innovation and empower businesses with cutting-edge solutions.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="why-box">
+              <h3>Why Choose Our Products?</h3>
+              <p>
+                At Gifted Hands, we don’t just build web applications—we craft powerful digital solutions designed to drive your business forward.
+              </p>
+              
+            </div>
+          </div><!-- End Why Box -->
+
+          {% comment %} <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="col-xl-4">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-clipboard-data"></i>
+                  <h4>Corporis voluptates officia eiusmod</h4>
+                  <p>Our team leverages the latest frameworks, tools, and best practices to deliver web applications that are fast, secure, and scalable. Stay ahead of the competition with innovative, future-proof solutions.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-gem"></i>
+                  <h4>Ullamco laboris ladore pan</h4>
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-inboxes"></i>
+                  <h4>Labore consequatur incidid dolore</h4>
+                  <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                </div>
+              </div><!-- End Icon Box --> {% endcomment %}
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /What We Do Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Us</h2>
+        <p>
+          At Gifted Hands, we believe in transforming ideas into impactful digital solutions. With expertise in web application development, we empower businesses to thrive in today’s competitive landscape.
+         </p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-3">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <img src="{% static 'img/about.jpg' %}" alt="" class="img-fluid">
+          </div>
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-content ps-0 ps-lg-3">
+              <h3>
+                Our Mission
+                </h3>
+              <p class="fst-italic">
+                We are dedicated to crafting customized, user-friendly web applications that streamline processes, enhance customer engagement, and unlock growth opportunities for businesses across industries.
+              </p>
+              <ul>
+                <li>
+                  <i class="bi bi-diagram-3"></i>
+                  <div>
+                    <h4>Tailored Solutions</h4>
+                    <p> Every application we create is built to meet the unique needs of your business, ensuring it aligns with your goals and delivers real value.</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-fullscreen-exit"></i>
+                  <div>
+                    <h4>Cutting-Edge Technology</h4>
+                    <p>
+                      We leverage modern tools and frameworks to deliver fast, secure, and scalable web applications.</p>
+                  </div>
+                </li>
+              </ul>
+              <p>
+                Let us help you build a digital presence that makes a difference. Reach out to learn more about how we can transform your ideas into reality!
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Clients</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Projects</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Hours Of Support</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Workers</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+      
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="bi bi-easel2"></i>
+              </div>
+              <a href="" class="stretched-link">
+                <h3>User Interface & Experience Design (UI/UX)</h3>
+              </a>
+              <p>Our designs focus on intuitive navigation and engaging visuals to enhance user satisfaction and boost engagement.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-wrench-adjustable-circle-fill"></i>
+              </div>
+              <a href="" class="stretched-link">
+                <h3>Web Application Maintenance & Support</h3>
+              </a>
+              <p>We provide ongoing support and updates to ensure your web application runs smoothly and stays ahead of the curve.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-bounding-box-circles"></i>
+              </div>
+              <a href="" class="stretched-link">
+                <h3>API Integration & Development</h3>
+              </a>
+              <p>Experience the power of apps with web-like accessibility, providing offline capabilities and enhanced performance</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-cart-check-fill
+                "></i>
+              </div>
+              <a href="" class="stretched-link">
+                <h3>E-Commerce Solutions</h3>
+              </a>
+              <p>From product catalogs to payment gateways, we create secure, scalable platforms to grow your online business.</p>
+              <a href="" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Custom Web Application Development</h3>
+              </a>
+              <p>We design and build tailored web applications to meet your business needs, ensuring seamless functionality and scalability.</p>
+              <a href="" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+
+      </div>
+      <!-- End Section Title -->
+
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>Itu Road, Uyo, Akwa Ibom, Nigeria.</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+234 8071361888</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>umohmccauleyndifreke@gmail.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Gifted Hands</span>
+          </a>
+          <p>Crafting innovative web applications to empower businesses worldwide.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://x.com/Damiiiy1"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://facebook.com/profile.php?id=61552098399353"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/ndifreke-umoh-75534b2a8/"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>Itu Road</p>
+          <p>Uyo, Akwa Ibom</p>
+          <p>Nigeria</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+2348071361888</span></p>
+          <p><strong>Email:</strong> <span>umohmccauleyndifreke@gmail.com</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Gifted Hands</strong> <span>All Rights Reserved</span></p>
+    
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
